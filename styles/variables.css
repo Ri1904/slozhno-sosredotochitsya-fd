@@ -4,6 +4,7 @@
   --header-letter-style: lowercase;
   --font-weight-bold: bold;
   --cover-image: url(../images/cover-image.png);
+  --background-page-color: #000028;
   --cover-background: var(--cover-image) center / cover no-repeat;
   --decoration-display: block;
   --main-color: #ff0070;
