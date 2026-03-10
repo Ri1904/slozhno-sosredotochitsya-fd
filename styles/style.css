@@ -204,7 +204,7 @@
 .footer {
   display: grid;
   position: relative;
-  margin-block-start: 40px;
+  margin-block-start: 45px;
 }
 
 .footer__title {
