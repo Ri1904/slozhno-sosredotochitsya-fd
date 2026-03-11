@@ -70,7 +70,7 @@
             Многозадачность
           </h3>
           <p class="article__text">
-            Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи <a href="" class="link-decor">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
+            Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи <a href="https://dana.org/news-and-insights/" target="_blank" class="link-decor">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
           </p>
         </article>
         <article class="section-article reasons__article">
@@ -140,7 +140,7 @@
               Прогуляйтесь
             </h4>
             <p class="article__text">
-              Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="" class="link-decor">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
+              Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328" target="_blank" class="link-decor">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </article>
           <article class="section-article advice__article">
@@ -166,11 +166,31 @@
           А можно в картинках?
         </h2>
         <div class="gallery__content">
-          <img src="./images/sunset.png" alt="sunset" class="gallery__image  sunset-image" loading="lazy">
-          <img src="./images/ice-cream.png" alt="ice-cream" class="gallery__image ice-cream-image" loading="lazy">
-          <img src="./images/tape.png" alt="tape" class="gallery__image tape-image" loading="lazy">
-          <img src="./images/books.png" alt="books" class="gallery__image books-image" loading="lazy">
-          <img src="./images/street.png" alt="street" class="gallery__image street-image" loading="lazy">
+          <picture class="gallery__image  sunset-image">
+            <source srcset="./images/sunset.avif" type="image/avif">
+            <source srcset="./images/sunset.webp" type="image/webp">
+            <img src="./images/sunset.png" alt="закат" loading="lazy" class="gallery__image  sunset-image">
+          </picture>
+          <picture class="gallery__image  ice-cream-image">
+            <source srcset="./images/ice-cream.avif" type="image/avif">
+            <source srcset="./images/ice-cream.webp" type="image/webp">
+            <img src="./images/ice-cream.png" alt="мороженое" loading="lazy" class="gallery__image  ice-cream-image">
+          </picture>
+          <picture class="gallery__image  tape-image">
+            <source srcset="./images/tape.avif" type="image/avif">
+            <source srcset="./images/tape.webp" type="image/webp">
+            <img src="./images/tape.png" alt="кассета" loading="lazy" class="gallery__image  tape-image">
+          </picture>
+          <picture class="gallery__image  books-image">
+            <source srcset="./images/books.avif" type="image/avif">
+            <source srcset="./images/books.webp" type="image/webp">
+            <img src="./images/books.png" alt="книги" loading="lazy" class="gallery__image  books-image">
+          </picture>
+          <picture class="gallery__image  street-image">
+            <source srcset="./images/street.avif" type="image/avif">
+            <source srcset="./images/street.webp" type="image/webp">
+            <img src="./images/street.png" alt="улица" loading="lazy" class="gallery__image  street-image">
+          </picture>
         </div>
       </section>
     </main>
