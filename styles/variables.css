@@ -1,9 +1,9 @@
 :root {
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', sans-serif;
   --regular-size: 18px;
   --header-letter-style: lowercase;
   --font-weight-bold: bold;
-  --cover-image: url(../images/cover-image.png);
+  --cover-image: url(../images/cover-image-dark.png);
   --background-page-color: #000028;
   --cover-background: var(--cover-image) center / cover no-repeat;
   --decoration-display: block;

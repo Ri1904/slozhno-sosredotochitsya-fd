@@ -50,6 +50,7 @@
 .header__decoration-element {
   position: absolute;
   top: 10px;
+  text-transform: uppercase;
   right: 39px;
   color: var(--main-color);
   display: var(--decoration-display);
@@ -69,7 +70,6 @@
 
 .header__theme-menu {
   justify-self: end;
-  block-size: 98px;
   margin-block-start: 5px;
 }
 
@@ -120,7 +120,6 @@
 }
 
 .header__description {
-  block-size: 117px;
   margin-block-start: -9px;
   line-height: 23px;
 }
@@ -181,7 +180,7 @@
 }
 
 .link-decor:hover {
-  border-block-end: 2px solid currentColor;
+  border-block-end: 1px solid currentColor;
 }
 
 .link-decor:focus {
@@ -271,7 +270,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .reasons__article {
+  .reasons .section-article {
     grid-column: 2 / 4;
   }
 
@@ -279,7 +278,7 @@
     grid-column: 1;
   }
 
-  .issues__article {
+  .issues .section-article {
     grid-column: 1 / 4;
   }
 
@@ -287,8 +286,8 @@
     grid-column: 2 / 4;
   }
 
-  .reasons__article > .article__text,
-  .advice__article > .article__text {
+  .reasons .section-article > .article__text,
+  .advice .section-article > .article__text {
     max-inline-size: 472px;
   }
 
@@ -340,7 +339,6 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    block-size: 98px;
     margin-block-start: 20px;
   }
 
@@ -355,25 +353,24 @@
   }
 
   .header__description {
-    block-size: 71px;
     inline-size: 491px;
   }
 
-  .reasons__article > .article__text,
-  .advice__article > .article__text {
+  .reasons .section-article > .article__text,
+  .advice .section-article > .article__text {
     max-inline-size: initial;
   }
 
-  .issues__article {
+  .issues .section-article {
     grid-row: 2;
     grid-column: 1;
   }
-  
-  .article-food {
+
+  .issues .section-article:nth-of-type(2) {
     grid-column: 2;
   }
 
-  .article-gadget {
+  .issues .section-article:nth-of-type(3) {
     grid-column: 3;
   }
 }
