@@ -96,7 +96,7 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--border-color-hover);
-} 
+}
 
 .header__theme-menu-button:focus {
   outline: none;
@@ -104,7 +104,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 1px solid currentColor  ;
+  border-block-end: 1px solid currentColor;
 }
 
 .main-title {
@@ -268,9 +268,12 @@
 
   .content-section {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
   }
 
-  .reasons .section-article {
+  .reasons .section-article,
+  .article-container {
     grid-column: 2 / 4;
   }
 
@@ -280,10 +283,6 @@
 
   .issues .section-article {
     grid-column: 1 / 4;
-  }
-
-  .article-container {
-    grid-column: 2 / 4;
   }
 
   .reasons .section-article > .article__text,
@@ -361,16 +360,14 @@
     max-inline-size: initial;
   }
 
+  .issues__title {
+    grid-column: 1 / -1;
+    max-inline-size: 315px;
+    grid-row: 1;
+  }
+
   .issues .section-article {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .issues .section-article:nth-of-type(2) {
-    grid-column: 2;
-  }
-
-  .issues .section-article:nth-of-type(3) {
-    grid-column: 3;
+    grid-row: auto;
+    grid-column: auto;
   }
 }
